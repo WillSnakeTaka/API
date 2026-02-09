@@ -1,0 +1,12 @@
+[
+  { "name": "Milo", "breed": "Tabby", "age": 2, "color": "Orange" },
+  { "name": "Luna", "breed": "Siamese", "age": 3, "color": "Cream" },
+  { "name": "Oliver", "breed": "British Shorthair", "age": 4, "color": "Gray" },
+  { "name": "Bella", "breed": "Persian", "age": 5, "color": "White" },
+  { "name": "Leo", "breed": "Maine Coon", "age": 1, "color": "Brown" },
+  { "name": "Nala", "breed": "Bengal", "age": 2, "color": "Golden" },
+  { "name": "Simba", "breed": "Ragdoll", "age": 6, "color": "Chocolate" },
+  { "name": "Kitty", "breed": "Scottish Fold", "age": 2, "color": "Black" },
+  { "name": "Chloe", "breed": "Sphynx", "age": 3, "color": "Pink" },
+  { "name": "Jasper", "breed": "Norwegian Forest", "age": 7, "color": "Silver" }
+]

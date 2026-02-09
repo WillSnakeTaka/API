@@ -1,0 +1,159 @@
+:root {
+  --bg-a: #fff6ef;
+  --bg-b: #ffeef7;
+  --card: #ffffffcc;
+  --text: #35261f;
+  --accent: #ff6f61;
+  --accent-2: #ff9f68;
+  --line: #f1cfc2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', 'Comic Sans MS', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 20%, #ffffff80 0 9%, transparent 10%),
+    radial-gradient(circle at 80% 10%, #ffffff80 0 8%, transparent 9%),
+    linear-gradient(140deg, var(--bg-a), var(--bg-b));
+}
+
+.page {
+  width: min(980px, 92vw);
+  margin: 28px auto 40px;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 24px #ffcab61f;
+  animation: pop-in 0.5s ease both;
+}
+
+.hero {
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #9f6c57;
+}
+
+h1,
+h2 {
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #7d5b4d;
+}
+
+.media-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.media-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.media-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+figure {
+  margin: 0;
+  border-radius: 14px;
+  background: #fff7f3;
+  border: 1px solid #f3d6c9;
+  padding: 8px;
+}
+
+img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #8f6b5d;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dcb8a8;
+  font: inherit;
+}
+
+input,
+select {
+  background: #fff;
+}
+
+button {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transform: translateY(0);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px) scale(1.01);
+  filter: brightness(1.04);
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhiskerBook</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero card">
+      <p class="kicker">Cozy cat corner</p>
+      <h1>WhiskerBook API Client</h1>
+      <p class="subtitle">Track cats, post meows, and enjoy random cat chaos.</p>
+    </header>
+
+    <section class="card media-card">
+      <div class="media-head">
+        <h2>Random Cat Media</h2>
+        <div class="media-actions">
+          <button id="refresh-pic" type="button">New Pic</button>
+          <button id="refresh-gif" type="button">New GIF</button>
+        </div>
+      </div>
+      <div class="media-grid">
+        <figure>
+          <img id="cat-pic" alt="Random cat picture" loading="lazy" />
+          <figcaption>Photo</figcaption>
+        </figure>
+        <figure>
+          <img id="cat-gif" alt="Random cat gif" loading="lazy" />
+          <figcaption>GIF</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Create Cat</h2>
+      <form id="cat-form">
+        <input name="name" placeholder="Cat name" required />
+        <input name="breed" placeholder="Breed" />
+        <button type="submit">Add Cat</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Create Meow</h2>
+      <form id="meow-form">
+        <select id="cat-select" name="catId" required></select>
+        <input name="text" placeholder="Meow text" required />
+        <button type="submit">Add Meow</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Cats</h2>
+      <ul id="cats-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Meows</h2>
+      <ul id="meows-list"></ul>
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
