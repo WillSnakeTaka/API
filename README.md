@@ -1,4 +1,4 @@
-# WhiskerBook API
+(# See this live demo)[https://willsnaketaka.github.io/API/]
 
 WhiskerBook is an Express + MongoDB API with three collections (`cats`, `meows`, `purrs`) and a static client served from `public/`.
 
